@@ -1,0 +1,130 @@
+{
+    /******************* Global */
+    "editor.fontSize": 13,
+    "editor.inlineSuggest.enabled": true,
+    "editor.cursorSmoothCaretAnimation": "on", 
+    "editor.minimap.enabled": false,
+    "editor.renderLineHighlight": "gutter",
+    "editor.smoothScrolling": true,
+    "editor.matchBrackets": "never",
+    "editor.autoClosingBrackets": "beforeWhitespace",
+    "editor.bracketPairColorization.enabled": false,
+    "editor.roundedSelection": false,
+    "editor.lineNumbers": "on",
+    "workbench.startupEditor": "none",
+    "workbench.editor.showIcons": false,
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.statusBar.visible": true,
+    "workbench.tree.indent": 10,
+    "workbench.colorTheme": "Moegi Dark",
+    "workbench.activityBar.location": "hidden",
+    "security.workspace.trust.enabled": false,
+    "explorer.decorations.colors": false,
+    "explorer.confirmDelete": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "window.autoDetectColorScheme": true,
+    "window.zoomLevel": 1,
+    "update.showReleaseNotes": false,
+    "explorer.confirmDragAndDrop": false,
+
+    /******************* Fonts */
+    // "editor.fontFamily": "Fantasque Sans Mono",
+    "editor.fontFamily": "MesloLGL Nerd Font",
+    "editor.inlayHints.fontFamily": "MesloLGL Nerd Font",
+    "debug.console.fontFamily": "MesloLGL Nerd Font",
+    "terminal.integrated.fontFamily": "MesloLGL Nerd Font",
+
+    /******************* Themes */
+    "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-auto",
+    "workbench.productIconTheme": "Tabler",
+    "workbench.preferredDarkColorTheme": "Moegi Dark",
+    "workbench.preferredLightColorTheme": "Moegi Light",
+
+    /******************* Doki */
+    // You will have to use the "Remove Sticker/Background" command to restore VS Code back to supported status before unistalling.
+    // waifus: faye marcy alita alita_stealth frieren
+    "doki.background.path": "/Users/alexeystepanov/.vscode/custom/alita_background.png",
+    "doki.wallpaper.path": "/Users/alexeystepanov/.vscode/custom/alita_wallpaper.png",
+
+    /******************* Terminal */
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.external.osxExec": "iTerm.app",
+
+    /******************* Git */
+    "git.confirmSync": false,
+    "git.openRepositoryInParentFolders": "always",
+    "git.autofetch": true,
+
+    /******************* Go */
+    "go.toolsManagement.autoUpdate": true,
+    "gopls": {
+        "ui.semanticTokens": true,
+        "ui.noSemanticNumber": true,
+        "ui.noSemanticString": true
+    },
+
+    /******************* C/C++ */
+    "lldb.launch.terminal": "integrated",
+    "lldb.library": "/opt/homebrew/opt/llvm/bin/lldb",
+    "c-cpp-compile-run.c-compiler": "/opt/homebrew/opt/llvm/bin/clang",
+    "c-cpp-compile-run.c-flags": "-Wall -Wextra",
+    "c-cpp-compile-run.cpp-flags": "-Wall -Wextra -Werror -g -fsanitize=address,undefined -fno-sanitize-recover=all -O2 -std=c++17",
+    "c-cpp-compile-run.cpp-compiler": "/opt/homebrew/opt/llvm/bin/clang++",
+    "c-cpp-compile-run.save-before-compile": true,
+    "c-cpp-compile-run.output-location": "build",
+    "cmake.configureOnOpen": false,
+    "cmake.cmakePath": "/opt/homebrew/bin/cmake",
+    "clangd.path": "/opt/homebrew/opt/llvm/bin/clangd",
+
+    /******************* Global launch.json */
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            // { // C/C++ LLDB
+            //     "name": "CodeLLDB",
+            //     "type": "lldb",
+            //     "request": "launch",
+            //     "program": "${fileDirname}/build/${fileBasenameNoExtension}",
+            //     "args": [],
+            //     "cwd": "${fileDirname}",
+            // },
+            {
+                "name": "GO Debug",
+                "type": "go",
+                "request": "launch",
+                "mode": "auto",
+                "program": "${fileDirname}"
+            }
+        ]
+    },
+
+    /******************* Sub-Extensions */
+    "spotify.showLyricsButton": false,
+    "spotify.showSignOutButton": false,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "yaml": false,
+        "json": false
+    },
+    "shellscapeBrackets.style": {
+        "borderColor": "lime",
+        "borderStyle": "dotted dotted dotted dotted",
+        "borderWidth": "1.0px"
+    },
+    "gitlens.defaultGravatarsStyle": "retro",
+    "sqltools.connections": [],
+    "todo-tree.general.tags": [
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]"
+    ],
+
+    /******************* No telemetry */
+    "redhat.telemetry.enabled": false,
+    "telemetry.telemetryLevel": "off"
+}
