@@ -5,10 +5,10 @@ C-m = ["jump_view_right", ":buffer-close!",
  ":vsplit-new", ":insert-output ack --group -o ' TODO *.*| FIXME *.*| XXX *.*'",
  "collapse_selection", "goto_file_start", "jump_view_left"]
 C-w = ":bc!"
+esc = ["collapse_selection", "keep_primary_selection"]
 
 [editor]
 true-color = true
-line-number = "relative"
 mouse = true
 shell = ["zsh", "-c"]
 cursorline = true

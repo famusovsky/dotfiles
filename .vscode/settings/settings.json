@@ -124,7 +124,11 @@
         "[x]"
     ],
 
-    /******************* No telemetry */
+    /******************* No I dont want to */
     "redhat.telemetry.enabled": false,
-    "telemetry.telemetryLevel": "off"
+    "telemetry.telemetryLevel": "off",
+    "extensions.ignoreRecommendations": true,
+
+    /******************* Other */
+    
 }
