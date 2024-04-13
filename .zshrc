@@ -12,7 +12,6 @@ HIST_STAMPS="dd.mm.yyyy"
 
 plugins=(
     git 
-    web-search
     colorize #history
     aliases
 )
@@ -20,13 +19,9 @@ plugins=(
 ZSH_COLORIZE_TOOL=chroma
 ZSH_COLORIZE_STYLE="hrdark"
 
-ZSH_WEB_SEARCH_ENGINES=(
-    ya "https://yandex.ru/yandsearch?text="
-    cppref "https://en.cppreference.com/w/index.php?Search&search="
-)
-
 FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 source $ZSH/oh-my-zsh.sh
 
 alias py=/usr/bin/python3
-alias c="code"
+alias c=code
+alias ls="eza --hyperlink"
