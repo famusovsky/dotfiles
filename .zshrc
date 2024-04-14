@@ -25,3 +25,4 @@ source $ZSH/oh-my-zsh.sh
 alias py=/usr/bin/python3
 alias c=code
 alias ls="eza --hyperlink"
+alias checktodo="echo TODO | entr -c -c cat TODO /_"
