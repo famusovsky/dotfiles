@@ -5,7 +5,7 @@
 >
 > [vscode](./.vscode)
 >
-> [wezterm](./.wezterm.lus)
+> [wezterm](./.wezterm.lua)
 >
 > [kitty](./.config/kitty/kitty.conf)
 
