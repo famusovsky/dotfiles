@@ -1,13 +1,13 @@
 ## Мои конфиг файлы
-> zsh
+> [zsh](./.zshrc)
 >
-> helix
+> [helix](./.config/helix/config.toml)
 >
-> vscode
+> [vscode](./.vscode)
 >
-> wezterm
+> [wezterm](./.wezterm.lus)
 >
-> kitty
+> [kitty](./.config/kitty/kitty.conf)
 
 Для установки через `make` необходима утилита [stow](https://www.gnu.org/software/stow/).
 
