@@ -1,9 +1,11 @@
-theme = "colibri"
+# theme = "colibri"
+theme = "kanagawa"
 
 [keys.normal]
-C-s = [":write", ":sh : > TODO && ack --ignore-file=is:TODO --group -o ' TODO *.*| FIXME *.*| XXX *.*' > TODO"]
-C-t = "save_selection"
+C-s = ":w"
+C-t = [":sh ack --group -o ' TODO *.*| FIXME *.*| XXX *.*'"]
 C-w = ":bc!"
+C-q = ":q"
 C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
 esc = ["collapse_selection", "keep_primary_selection"]
 

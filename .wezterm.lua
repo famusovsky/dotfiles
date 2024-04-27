@@ -35,7 +35,7 @@ config.colors = {
   ansi = {
     '#969da5',
     '#ed5c6c',
-    '#cfcc58',
+    '#5ff967',
     '#cfcc58',
     '#79b9ff',
     '#b392f1',
@@ -45,7 +45,7 @@ config.colors = {
   brights = {
     '#969da5',
     '#df3547',
-    '#e1dc27',
+    '#34fa3e',
     '#e1dc27',
     '#4798f1',
     '#a77df5',
