@@ -4,6 +4,7 @@ export PATH=/Users/alexeystepanov/go/bin:$PATH
 export PATH=/Users/alexeystepanov/Library/Python/3.11/bin:$PATH
 export HOMEBREW_AUTO_UPDATE_SECS="86400"
 export ZSH="$HOME/.oh-my-zsh"
+export EDITOR=hx
 
 eval $(thefuck --alias)
 
@@ -26,9 +27,12 @@ source $ZSH/oh-my-zsh.sh
 alias py="/usr/bin/python3"
 alias c="code"
 alias ls="eza --hyperlink"
-alias checktodo="echo TODO | entr -c -c cat TODO /_"
 alias starwars="telnet towel.blinkenlights.nl"
-alias ip="ipinfo myip"
 alias helix="hx"
+alias proxy="toggle-proxy.sh"
+
+# plan9
+export PLAN9=/Users/alexeystepanov/plan9port
+alias acme="$PLAN9/bin/9 acme -f /mnt/font/'JetBrainsMono-Regular'/14a/font -l ~/acme.dump &"
 
 fortune | cowsay -f www

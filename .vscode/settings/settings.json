@@ -37,7 +37,6 @@
     /******************* Themes */
     "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-auto",
     "workbench.productIconTheme": "Tabler",
-    "workbench.preferredDarkColorTheme": "Moegi Dark",
     "workbench.preferredLightColorTheme": "Moegi Light",
 
     /******************* Doki */
@@ -128,6 +127,10 @@
     "redhat.telemetry.enabled": false,
     "telemetry.telemetryLevel": "off",
     "extensions.ignoreRecommendations": true,
+    "[css]": {
+        "editor.defaultFormatter": "aeschli.vscode-css-formatter"
+    },
+    "workbench.preferredDarkColorTheme": "Moegi Dark",
 
     /******************* Other */
     
